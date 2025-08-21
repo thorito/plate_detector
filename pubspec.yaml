@@ -1,0 +1,28 @@
+name: plate_scanner
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  camera: ^0.11.2
+  cupertino_icons: ^1.0.8
+  flutter:
+    sdk: flutter
+  google_mlkit_text_recognition: ^0.15.0
+  image: ^4.5.4
+  path_provider: ^2.1.5
+  permission_handler: ^12.0.1
+  tflite_flutter: ^0.11.0
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/models/plate_detector.tflite
